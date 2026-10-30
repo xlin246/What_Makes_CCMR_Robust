@@ -1,0 +1,5 @@
+model: ccmr_ba
+
+data:
+  train_dataset: "chairs-train"
+  val_dataset: "chairs-val"

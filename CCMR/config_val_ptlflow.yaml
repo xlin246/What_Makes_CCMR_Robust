@@ -1,0 +1,6 @@
+model: ccmr_ba
+ckpt_path: checkpoints/ccmr/_chairs_phase0_120000.pth
+all: false
+select: ~
+data:
+  val_dataset: "chairs-val+sintel-clean-val"

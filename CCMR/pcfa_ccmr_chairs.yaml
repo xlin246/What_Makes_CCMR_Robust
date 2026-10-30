@@ -1,0 +1,23 @@
+# sari: python -m flowbench.attacks --config pcfa_ccmr_chairs.yaml --data.dataset_config_path ../FlowBench-dev-fork/datasets.yaml
+
+# haendel: python -m flowbench.attacks --config pcfa_ccmr_chairs.yaml --data.dataset_config_path datasets.yaml
+
+attack:
+  - pcfa
+attack_iterations:
+  - 20
+attack_epsilon:
+  - 0.005
+attack_alpha: 1e-7
+pcfa_boxconstraint:
+  - change_of_variables
+write_outputs: True
+
+model:
+  class_path: ptlflow.models.ccmr
+  init_args:
+    iters: [4,6,8]
+ckpt_path: checkpoints/ccmr_tasks_1_4_5_0621/CCMR_chairs.pth
+
+data:
+  val_dataset: sintel-final-trainval
