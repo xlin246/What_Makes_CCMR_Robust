@@ -1,0 +1,1 @@
+{"phase": 2, "current_steps": 120000, "newer": "checkpoints/ccmr_tasks_1_4_5_0621/sintel_phase2_120000.pth", "older": "checkpoints/ccmr_tasks_1_4_5_0621/sintel_phase2_118000.pth"}

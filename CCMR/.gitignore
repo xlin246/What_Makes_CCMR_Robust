@@ -1,5 +1,4 @@
 correlation.egg-info
-checkpoints/*
 data/
 images/*
 runs/*
